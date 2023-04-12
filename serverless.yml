@@ -1,0 +1,14 @@
+service: my-new-service
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: 'lambda-dev-balam'
+  region: 'us-east-1'
+
+functions:
+  getPrueba:
+    handler: handler.getPrueba
+  postPrueba:
+    handler: handler.postPrueba
