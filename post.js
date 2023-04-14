@@ -1,4 +1,5 @@
 module.exports.postPrueba = async (event) => {
+  console.log("Compulsa post prueba")
     return {
       statusCode: 200,
       body: JSON.stringify(
