@@ -4,11 +4,11 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs16.x
-  profile: 'lambda-dev-balam'
+  profile: 'lambda-dev-oliver'
   region: 'us-east-1'
 
 functions:
   getPrueba:
     handler: handler.getPrueba
   postPrueba:
-    handler: handler.postPrueba
+    handler: post.postPrueba
