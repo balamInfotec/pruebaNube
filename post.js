@@ -1,11 +1,11 @@
-module.exports.postPrueba = async (event) => {
-  console.log("Compulsa post prueba")
+module.exports.postPrueba = async (event, context) => {
+    console.log("Propiedad: ", context.functionName)
     return {
       statusCode: 200,
       body: JSON.stringify(
         {
           message: 'Esto es un post de prueba INE',
-          input: event,
+          contexto: context
         },
         null,
         2

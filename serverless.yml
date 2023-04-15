@@ -4,11 +4,19 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs16.x
-  profile: 'lambda-dev-oliver'
+  profile: 'lambda-dev-recluta'
   region: 'us-east-1'
 
 functions:
   getPrueba:
     handler: handler.getPrueba
+    events:
+      - http:
+          method: get
+          path: pruebaGet
   postPrueba:
     handler: post.postPrueba
+    events:
+      - http:
+          method: post
+          path: pruebaPost
