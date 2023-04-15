@@ -4,7 +4,7 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs12.x
-  profile: 'lambda-dev-balam'
+  profile: 'lambda-dev-recluta'
   region: 'us-east-1'
 
 functions:
