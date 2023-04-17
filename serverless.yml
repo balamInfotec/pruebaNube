@@ -11,4 +11,4 @@ functions:
   getPrueba:
     handler: handler.getPrueba
   postPrueba:
-    handler: handler.postPrueba
+    handler: post.postPrueba
